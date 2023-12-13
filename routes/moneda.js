@@ -8,8 +8,8 @@ router.get('/:id', getMonedaById);
 
 router.post('/add', postMoneda),
 
-router.put('/edit', putMoneda);
+router.put('/edit/:id', putMoneda);
 
-router.delete('/delete', deleteMoneda);
+router.delete('/delete/:id', deleteMoneda);
 
 module.exports = router;

@@ -61,7 +61,6 @@ const putMoneda = async (req = request, res = response) => {
     const {nombreMoneda, valor, fecha} = req.body;
 
     const monedaActualizar = await Moneda.findByIdAndUpdate(id, {nombreMoneda, valor, fecha});
-
     res.json({
         msg: 'Moneda actualizada',
         monedaActualizar,
